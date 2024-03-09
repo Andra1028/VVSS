@@ -1,0 +1,20 @@
+
+
+java:S1104"UMake tasksList a static final constant or non-public and provide accessors if needed.(ß·Š¢ÿÿÿÿÿ8ø¿ÈŸâ1J$dba99c1b-bb14-4e3c-91bc-e42a3361cf7d
+›
+java:S1104!"XMake editNewStage a static final constant or non-public and provide accessors if needed.(¿‰‚×8²ãÙŸâ1J$b8b94006-5e07-4285-ac2c-a6e765ba2e37
+
+java:S1104""UMake infoStage a static final constant or non-public and provide accessors if needed.(ßÏ¬Üùÿÿÿÿ8ù¿ÈŸâ1J$f39d81aa-6703-41aa-b33f-e7651e5e5c16
+˜
+java:S1104$"UMake mainTable a static final constant or non-public and provide accessors if needed.(ß«öÈ8ù¿ÈŸâ1J$555aaa79-7587-4b92-8d6e-dbf33db6d816
+u
+java:S1444!"2Make this "public static editNewStage" field final(¿‰‚×8µãÙŸâ1J$02126c5d-c2bc-49c7-9a7b-59e926a80c55
+w
+java:S1444""/Make this "public static infoStage" field final(ßÏ¬Üùÿÿÿÿ8û¿ÈŸâ1J$1589c49c-c87c-45ec-912f-3d45334feb55
+r
+java:S1444$"/Make this "public static mainTable" field final(ß«öÈ8û¿ÈŸâ1J$5e9c8f71-d818-4b3f-b77b-14af3e1bb8f0
+X
+java:S2696?"6Make the enclosing method "static" or remove this set.(ôé½ºûÿÿÿÿ8¡ÚçŸâ1
+y
+java:S2696Y"6Make the enclosing method "static" or remove this set.(ã¯›ğ8¤ÀÈŸâ1J$219fcc3d-5412-4384-8d4c-922f27b41755
+ƒ	java:S125{"<This block of commented-out lines of code should be removed.(×‡íşÿÿÿÿ8Ñ„äŸâ1J$25f4ebf3-e63e-4513-9f5a-d5ff23c05c32
