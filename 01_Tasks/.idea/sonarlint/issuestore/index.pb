@@ -11,3 +11,11 @@ W
 'src/main/java/tasks/model/TaskList.java,f\c\fc2a13256c261b5abd00e9188b5f42e29358bf6e
 ^
 .src/main/java/tasks/model/TasksOperations.java,4\f\4f01b9f8917f794cdf589fb86ab1f8dec2bc64a1
+H
+Docs/initial/diagram.uml,4\a\4a64bb25c0a47b450840a29db03e66b781487273
+9
+	Tasks.iml,e\4\e4a1f17f000c14a51c1b4832557db4be154b6363
+I
+logs/task-manager-log.log,0\9\0959973df7556b24c6d773e780902c3037687e4c
+`
+0Docs/Lab01/CheckLists/RequirementsTask_modif.txt,1\7\1718590af4a58e1afed1636bb8cf2016f4fe8e2c

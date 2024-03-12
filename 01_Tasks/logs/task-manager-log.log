@@ -103,3 +103,6 @@
 2024-03-09 18:09:34 INFO  Controller:74 - Main controller initializing
 2024-03-09 18:10:01 INFO  TaskInfoController:24 - task info window initializing
 2024-03-09 18:10:06 INFO  TaskInfoController:24 - task info window initializing
+2024-03-12 10:32:43 INFO  Main:35 - saved data reading
+2024-03-12 10:32:43 INFO  Main:40 - application start
+2024-03-12 10:32:43 INFO  Controller:74 - Main controller initializing
