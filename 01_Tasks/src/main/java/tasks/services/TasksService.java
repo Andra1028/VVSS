@@ -41,6 +41,10 @@ public class TasksService {
         String[] units = stringTime.split(":");
         int hours = Integer.parseInt(units[0]);
         int minutes = Integer.parseInt(units[1]);
+        if (hours < 0 || minutes < 0 || hours >= 24 || minutes >= 60)
+        {
+            throw new IllegalArgumentException("Invalid stringTime value");
+        }
         int result = (hours * DateService.MINUTES_IN_HOUR + minutes) * DateService.SECONDS_IN_MINUTE;
         return result;
     }

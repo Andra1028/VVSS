@@ -3,6 +3,8 @@ package tasks.model;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.text.ParseException;
 import java.util.Date;
@@ -30,7 +32,8 @@ class TaskTest {
        assert task.getFormattedDateStart().equals(task.getDateFormat().format(Task.getDateFormat().parse("2023-02-12 10:10")));
     }
 
-    @AfterEach
-    void tearDown() {
+    @ParameterizedTest
+    @ValueSource(strings = { ""})
+    void tearDown(String hour) {
     }
 }
