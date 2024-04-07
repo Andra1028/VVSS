@@ -12,28 +12,24 @@ import java.util.Date;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TaskTest {
+    @Test
+    void testGetTitle()
+    {
+        Task task = new Task("Title", new Date());
 
-    private Task task;
+        String title = task.getTitle();
 
-    @BeforeEach
-    void setUp() {
-        try {
-            task=new Task("new task",Task.getDateFormat().parse("2023-02-12 10:10"));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+        assertEquals(title, "Title");
     }
 
     @Test
-    void testTaskCreation() throws ParseException {
-       assert task.getTitle() == "new task";
-        System.out.println(task.getFormattedDateStart());
-        System.out.println(task.getDateFormat().format(Task.getDateFormat().parse("2023-02-12 10:10")));
-       assert task.getFormattedDateStart().equals(task.getDateFormat().format(Task.getDateFormat().parse("2023-02-12 10:10")));
-    }
+    void testGetTime()
+    {
+        Date time = new Date();
+        Task task = new Task("Title", time);
 
-    @ParameterizedTest
-    @ValueSource(strings = { ""})
-    void tearDown(String hour) {
+        Date getDate = task.getTime();
+
+        assertEquals(time, getDate);
     }
 }
