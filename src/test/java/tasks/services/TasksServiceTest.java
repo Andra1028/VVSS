@@ -10,15 +10,12 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TasksServiceTest {
-    @DisplayName("TasksService")
+    @Test
     @Tag("ECP")
-    @Timeout(20)
-    @ParameterizedTest
-    @ValueSource(strings = { "10:10" })
-    void parseFromStringToSecondsValidTest(String hour) {
+    void parseFromStringToSecondsValidTest() {
         TasksService tasksService = new TasksService(null);
 
-        int result = tasksService.parseFromStringToSeconds(hour);
+        int result = tasksService.parseFromStringToSeconds("10:10");
 
         assertEquals(result, 3600*10+10*60);
     }
