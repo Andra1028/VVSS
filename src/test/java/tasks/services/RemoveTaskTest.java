@@ -31,4 +31,15 @@ public class RemoveTaskTest {
 
         assertFalse(wasRemoved);
     }
+
+    @Test
+    void testValid2(){
+        ArrayTaskList taskList = new ArrayTaskList();
+        Task task = new Task("Title", new Date());
+
+        taskList.add(task);
+        boolean wasRemoved = taskList.remove(new Task("Title2", new Date()));
+
+        assertFalse(wasRemoved);
+    }
 }
