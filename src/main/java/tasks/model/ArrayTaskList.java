@@ -64,21 +64,29 @@ public class ArrayTaskList extends TaskList{
     }
     @Override
     public boolean remove(Task task){
-        if (task == null) return false;
-        int indexOfTaskToDelete = -1;
-        for(int i = 0; i < tasks.length; i++){
-            if (task.equals(tasks[i])){
-                indexOfTaskToDelete = i;
-                break;
+        boolean ok=true;
+        if (task == null)
+        {
+            ok=false;
+        }
+        else {
+            int indexOfTaskToDelete = -1;
+            for (int i = 0; i < tasks.length; i++) {
+                if (task.equals(tasks[i])) {
+                    indexOfTaskToDelete = i;
+                    break;
+                }
+            }
+            if (indexOfTaskToDelete >= 0) {
+                this.numberOfTasks--;
+                System.arraycopy(tasks, indexOfTaskToDelete + 1, tasks, indexOfTaskToDelete,
+                        numberOfTasks - indexOfTaskToDelete + 1);
+            }
+            else{
+                ok=false;
             }
         }
-        if (indexOfTaskToDelete >= 0){
-            this.numberOfTasks--;
-            System.arraycopy(tasks, indexOfTaskToDelete+1,tasks,indexOfTaskToDelete,
-                    numberOfTasks-indexOfTaskToDelete+1);
-            return true;
-        }
-        return false;
+        return ok;
     }
     @Override
     public int size(){
